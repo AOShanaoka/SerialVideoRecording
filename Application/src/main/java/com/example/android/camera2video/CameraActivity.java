@@ -17,6 +17,7 @@
 package com.example.android.camera2video;
 
 import android.app.Activity;
+import android.content.Intent;
 import android.os.Bundle;
 
 public class CameraActivity extends Activity {
@@ -25,9 +26,19 @@ public class CameraActivity extends Activity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_camera);
+
+        Intent intent = getIntent();
+        int number = intent.getIntExtra("numberofvideos", 0);
+        int vlength = intent.getIntExtra("lengthofvideos", 0);
+
         if (null == savedInstanceState) {
+            Bundle bundle = new Bundle();
+            bundle.putInt( "numberofvideos", number);
+            bundle.putInt("lengthofvideos", vlength);
+            Camera2VideoFragment fragment =  new Camera2VideoFragment();
+            fragment.setArguments(bundle);
             getFragmentManager().beginTransaction()
-                    .replace(R.id.container, Camera2VideoFragment.newInstance())
+                    .replace(R.id.container,fragment)
                     .commit();
         }
     }

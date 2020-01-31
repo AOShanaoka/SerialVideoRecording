@@ -17,4 +17,25 @@
 
     <style name="MaterialTheme" parent="android:Theme.Material.Light.NoActionBar.Fullscreen" />
 
+
+    <style name="Sample.InputLayout.Activate" parent="TextAppearance.AppCompat.Caption">
+        <item name="android:textColor">#0000FF</item>
+    </style>
+
+
+
+    <style name="EditText.Filled" parent="Widget.MaterialComponents.TextInputLayout.FilledBox">
+        <item name="hintTextAppearance">@style/Sample.InputLayout.Activate</item>
+        <item name="errorTextAppearance">@style/Sample.InputLayout.Error</item>
+    </style>
+
+    <style name="Sample.InputLayout.Error" parent="TextAppearance.AppCompat.Caption">
+        <item name="android:textColor">#0000FF</item>
+    </style>
+
+    <!--<style name="EditText.Style" parent="Base.Widget.AppCompat.EditText">-->
+        <!--<item name="colorControlNormal">#0000FF</item>-->
+        <!--<item name="colorControlActivated">#0000FF</item>-->
+    <!--</style>-->
+
 </resources>

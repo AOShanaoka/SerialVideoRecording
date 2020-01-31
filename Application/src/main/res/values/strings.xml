@@ -1,8 +1,25 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <string name="record">Record</string>
-    <string name="stop">Stop</string>
-    <string name="description_info">Info</string>
+    <string name="finish">Finish</string>
+    <string name="suspend">Suspend</string>
+    <string name="resume">Resume</string>
     <string name="permission_request">This sample needs permission for camera and audio recording.</string>
     <string name="camera_error">This device doesn\'t support Camera2 API.</string>
+    <string name="start">start</string>
+    <string name="number_videos">動画数</string>
+    <string name="video_length">秒数</string>
+    <string name="name">VidRecApp for AOS Cloud</string>
+    <string name="info_1">撮影する動画数を半角数字で入力してください</string>
+    <string name="info_2">撮影する動画の秒数を半角数字で入力してください</string>
+    <string name="image_description">info</string>
+    <string name="toast">動画数、秒数を半角数字で入力してください</string>
+    <string name="error_1">動画数、秒数を半角数字で入力してください</string>
+    <string name="error_2">動画数、秒数を半角数字で入力してください</string>
+    <string name="text_input_width">100dp</string>
+    <string name="description">photos</string>
+    <string name="japanese">日本語</string>
+    <string name="english">English</string>
+    <string name="language">言語選択</string>
+    <string name="progress">進行状況</string>
+    <string name="nonzero">この値を0にはできません。</string>
 </resources>

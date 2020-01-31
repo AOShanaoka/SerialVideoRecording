@@ -1,0 +1,199 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:id="@+id/title"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_marginTop="12dp"
+    android:layout_marginStart="12dp"
+    android:paddingStart="30dp"
+    android:paddingEnd="30dp">
+
+    <TextView
+        android:id="@+id/text_view_4"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/name"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentStart="true"
+        android:textSize="18sp"/>
+
+
+
+    <!--<TextView-->
+        <!--android:id="@+id/text_view_3"-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:text="@string/instruction"-->
+        <!--android:layout_below="@id/text_view_4"-->
+        <!--android:layout_alignParentStart="true"-->
+        <!--android:paddingTop="24dp"-->
+        <!--android:textSize="20sp"-->
+        <!--/>-->
+
+    <android.support.design.widget.TextInputLayout
+        android:id="@+id/videos"
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+        android:layout_width="290dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="60dp"
+        android:layout_alignParentStart="true"
+        android:layout_below="@id/text_view_4">
+
+        <android.support.design.widget.TextInputEditText
+            android:id="@+id/edit_number"
+            android:layout_width="120dp"
+            android:layout_height="wrap_content"
+            android:inputType="number"
+            android:hint="@string/number_videos" />
+
+
+
+    </android.support.design.widget.TextInputLayout>
+
+
+    <android.support.design.widget.TextInputLayout
+        android:id="@+id/seconds"
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+        android:layout_width="290dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="60dp"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/videos" >
+
+        <android.support.design.widget.TextInputEditText
+            android:id="@+id/edit_seconds"
+            android:layout_width="120dp"
+            android:layout_height="wrap_content"
+            android:inputType="number"
+            android:hint="@string/video_length"/>
+
+
+    </android.support.design.widget.TextInputLayout>
+
+    <!--<RelativeLayout-->
+        <!--android:id="@+id/number"-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:layout_alignParentStart="true"-->
+        <!--android:layout_below="@id/text_view_3"-->
+        <!--android:layout_marginTop="24dp">-->
+
+        <!--<TextView-->
+            <!--android:id="@+id/text_view_1"-->
+            <!--android:layout_width="wrap_content"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:text="@string/number_videos"-->
+            <!--android:textSize="16sp"-->
+            <!--android:layout_alignParentStart="true"-->
+            <!--android:paddingEnd="24dp"-->
+            <!--android:paddingStart="0dp" />-->
+
+        <!--<EditText-->
+            <!--android:id="@+id/edit_number"-->
+            <!--android:layout_width="wrap_content"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:layout_below="@id/text_view_1"-->
+            <!--android:inputType="number"-->
+            <!--android:hint="@string/nvideos"-->
+            <!--/>-->
+    <!--</RelativeLayout>-->
+
+    <!--<RelativeLayout-->
+        <!--android:id="@+id/seconds"-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:layout_alignParentStart="true"-->
+        <!--android:layout_below="@id/number"-->
+        <!--android:layout_marginTop="24dp"-->
+        <!--&gt;-->
+        <!--<TextView-->
+            <!--android:id="@+id/text_view_2"-->
+            <!--android:layout_width="wrap_content"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:text="@string/video_length"-->
+            <!--android:textSize="16sp"-->
+            <!--android:paddingEnd="24dp"-->
+            <!--android:layout_alignParentStart="true"-->
+            <!--android:paddingStart="0dp"/>-->
+
+        <!--<EditText-->
+            <!--android:id="@+id/edit_seconds"-->
+            <!--android:layout_width="wrap_content"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:layout_below="@+id/text_view_2"-->
+            <!--android:inputType="number"-->
+            <!--android:hint="@string/length"/>-->
+    <!--</RelativeLayout>-->
+
+    <Button
+        android:id="@+id/button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignEnd="@id/info_1"
+        android:layout_below="@id/seconds"
+        android:text="@string/start"
+        android:layout_marginTop="60dp"
+        android:textColor="#92d8d8"/>
+
+    <ImageButton
+        android:id="@+id/info_1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/ic_action_info"
+        android:contentDescription="@string/image_description"
+        android:layout_alignParentEnd="true"
+        android:layout_alignBottom="@id/videos"
+        />
+    <ImageButton
+        android:id="@+id/info_2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@id/seconds"
+        android:layout_alignParentEnd="true"
+        android:contentDescription="@string/image_description"
+        android:src="@drawable/ic_action_info" />
+
+    <!--<Spinner-->
+        <!--android:id="@+id/language_spinner"-->
+        <!--android:layout_width="wrap_content"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:layout_alignParentEnd="true"-->
+       <!--android:layout_alignParentTop="true"/>-->
+
+    <ImageButton
+        android:id="@+id/language"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_alignParentEnd="true"
+        android:background="@drawable/language"
+        android:contentDescription="@string/language"
+       />
+
+</RelativeLayout>
+
+    <!--<TextView-->
+        <!--android:id="@+id/japanese"-->
+        <!--android:layout_width="wrap_content"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:clickable="true"-->
+        <!--android:focusable="true"-->
+        <!--android:layout_alignParentBottom="true"-->
+        <!--android:text="@string/japanese"-->
+        <!--android:textColor="#afafaf"-->
+        <!--/>-->
+
+    <!--<TextView-->
+        <!--android:id="@+id/english"-->
+        <!--android:layout_width="wrap_content"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:clickable="true"-->
+        <!--android:focusable="true"-->
+        <!--android:layout_alignParentBottom="true"-->
+        <!--android:layout_toEndOf="@id/japanese"-->
+        <!--android:text="@string/english"-->
+        <!--android:textColor="#afafaf"-->
+        <!--/>-->
+
+
+

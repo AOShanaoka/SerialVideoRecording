@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="finish">Finish</string>
+    <string name="suspend">Suspend</string>
+    <string name="resume">Resume</string>
+    <string name="permission_request">This sample needs permission for camera and audio recording.</string>
+    <string name="camera_error">This device doesn\'t support Camera2 API.</string>
+    <string name="start">start</string>
+    <string name="number_videos">How many</string>
+    <string name="video_length">How long</string>
+    <string name="name">VidRecApp for AOS Cloud</string>
+    <string name="info_1">Enter the number of videos you need using half-width digit.</string>
+    <string name="info_2">Enter the length of each videos by the second using half-width digit.</string>
+    <string name="image_description">info</string>
+    <string name="toast">Please fill in all required fields</string>
+    <string name="error_1">Use half-width digit</string>
+    <string name="error_2">Use half-width digit</string>
+    <string name="text_input_width">150dp</string>
+    <string name="description">photos</string>
+    <string name="japanese">日本語</string>
+    <string name="english">English</string>
+    <string name="language">language selection</string>
+    <string name="progress">progress</string>
+    <string name="nonzero">Number acceptable here is 1 or more. </string>
+</resources>
